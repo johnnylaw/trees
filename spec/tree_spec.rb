@@ -20,4 +20,11 @@ describe Tree do
       expect(Tree.new(9, left_child: tree).left_child).to eq tree
     end
   end
+
+  describe '#right_child' do
+    it 'returns the right child given in the initializer' do
+      tree = Tree.new(3)
+      expect(Tree.new(9, right_child: tree).right_child).to eq tree
+    end
+  end
 end
