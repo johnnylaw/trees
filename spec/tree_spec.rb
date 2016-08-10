@@ -13,4 +13,11 @@ describe Tree do
       expect(->{tree.payload = 8}).to raise_error NoMethodError
     end
   end
+
+  describe '#left_child' do
+    it 'returns the left child given in the initializer' do
+      tree = Tree.new(3)
+      expect(Tree.new(9, left_child: tree).left_child).to eq tree
+    end
+  end
 end
