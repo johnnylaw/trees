@@ -6,4 +6,7 @@ class Tree
     @left_child = left_child
     @right_child = right_child
   end
+
+  # def add(payload)
+  # end
 end

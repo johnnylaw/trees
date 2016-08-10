@@ -27,4 +27,15 @@ describe Tree do
       expect(Tree.new(9, right_child: tree).right_child).to eq tree
     end
   end
+
+  describe '#add(new_payload)' do
+    context 'new_payload < payload' do
+    end
+
+    context 'new_payload > payload' do
+    end
+
+    context 'new_payload == payload' do
+    end
+  end
 end
